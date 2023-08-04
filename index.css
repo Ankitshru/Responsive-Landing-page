@@ -1,0 +1,388 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: hsl(0, 0%, 98%);
+    
+}
+.main-header{
+    width: 100%;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.menu-icon{
+    display: none;
+    margin-right: 24px;
+}
+.close-menu-icon{
+    display: none;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.navbar ul {
+    list-style: none;
+    display: inline-flex;
+}
+.navbar ul li{
+    padding-right: 22px;
+    margin-left: 20px;
+}
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+
+img#downarrow{
+    margin-left: 3px;
+}
+img#downarrow2 {
+    margin-left: 3px;
+}
+
+.navbar ul .btn-register{
+    border: 1px solid hsl(0, 0%, 8%);
+    background-color: transparent;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 9px;
+}
+ul.ul-outer2 {
+    position: relative;
+    left: 670px;
+}
+/***************Dropdown menu***********************/
+#todo-icon, #calander-icon, #reminder-icon, #planning-icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3px;
+    margin-left: 9px;
+}
+.planner{margin-left: -5px;} .link4{margin-left: -8px;} .link3{margin-right: -9px;}
+.navbar .ul-inner{
+    display: none;
+}
+ul.showHiddenList{
+    display: inline-block;
+    position: absolute;
+    top: 55px;
+    left: 135px;
+
+    margin-left: -30px;
+    height: 9em;
+    width: 8.5em;
+    line-height: 1.9;
+    padding: 0px;
+    background-color: white;
+    box-shadow: 1px 0px 8px -5px rgba(0,0,0,0.74);
+    border-radius: 4px;
+}
+
+.navbar .ul-inner2{
+    display: none;
+   
+}
+ul.showHiddenListCompany li {
+    position: relative;
+    left: -32px;
+    top: 5px;
+    width: inherit;
+    height: 2em;
+    line-height: 1.9;
+}
+ul.showHiddenListCompany{
+    display: block;
+    
+    height: 7.3em;
+    position: absolute;
+    left: 278px;
+    top: 56px;
+    background-color: white;
+    width: 4.5em;
+    box-shadow: 1px 0px 8px -5px rgba(0,0,0,0.74);
+    border-radius: 4px;
+}
+
+/***********on Hover effect*************/
+a:hover{
+    color: hsl(0, 0%, 8%);
+}
+.learn-more:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 8%);
+}
+/***********main header **************/
+.header-container{
+    display: flex;
+    height: 38.5em;
+    width: 100%;
+   
+}
+.description{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+.head-font{
+    font-size: 5.3em;
+    position: relative;
+    left: 130px;
+    top: -20px;
+    display: inline-block;
+}
+.ft{
+    position: relative;
+    top: 70px;
+    right: 230px;
+}
+
+.text-description{
+    position: relative;
+    top: -40px;
+    right: 35px;
+    width: 45%;
+    height: 10vh;
+    color: hsl(0, 0%, 41%);
+}
+
+.learn-more{
+    position: relative;
+    top: -60px;
+    right: 145px;
+    width: 140px;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    padding: 10px;
+    border-radius: 8px;
+}
+.clients{
+    position: relative;
+    top: -10px;
+    right: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.client-databiz{
+    height: 15px;
+    width: 80px;
+}
+.client-audiophil{
+    height: 25px;
+    width: 50px;
+}
+.client-meet{
+    height: 15px;
+    width: 60px;
+}
+.client-maker{
+    height: 15px;
+    width: 60px;
+}
+
+.header-img{
+    text-align: center;
+    width: 50%;
+    margin-top: 30px;
+}
+.image{
+    width: 50%;
+    margin-top: 30px;
+}
+.mobile-img{
+    display: none;
+}
+
+
+
+
+
+
+
+/******************************Responsive CSS*******************************/
+
+/****************************Design for smallest mobile display****************/
+
+
+/*********************responsive design for devices with width till 480px***************/
+
+@media (max-width: 480px){
+    .main-header{
+        justify-content: space-between;
+    }
+    .navbar{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        z-index: 1000;
+        margin-top: 5px;
+    }
+
+
+    /************** logo Image on mobile ******************/
+    .image{
+        display: none;
+    }
+    .mobile-img{
+        display: block;
+        width: 100%;
+    }
+    .logo{
+        margin-left: 17px;
+        margin-top: 10px;
+    }
+    /************* desktop image on mobile **************/
+
+    .header-container{
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .description{
+        width: 100%;
+    }
+    .head-font{
+        font-size: 11vw;
+        position: relative;
+        left: 1px;
+        top: -20px;
+        display: inline-block;
+    }
+    .ft {
+        position: relative;
+        top: 0;
+        right: 0px;
+    }
+    .header-img{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .text-description {
+        font-size: 5vw;
+        top: -52px;
+        right: -13px;
+        width: 17em;
+        height: 15vh;
+    }
+
+    .learn-more {
+        position: relative;
+        top: -66px;
+        right: 0;
+        width: 113px;
+    }
+
+    .clients {
+        position: relative;
+        top: -30px;
+        right: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+
+    /*******************************Sidebar Menu**************************/
+
+    #slideMenu{
+        z-index: 100;
+        background-color: white;
+        height: 75em;
+        width: 65%;
+        position: absolute;
+        left: 121px;
+        display: flex;
+        align-items: center;
+        box-shadow: -122px 0px 0px -1px rgba(0,0,0,0.33);
+    }
+    #slideMenu .ul-outer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        top: 230px;
+        left: -12px;
+        height: 20em;
+        width: 10em;
+        line-height: 1.5;
+    }
+    #slideMenu ul {
+        list-style: none;
+    }
+    #slideMenu .ul-inner, #slideMenu .ul-inner2 {
+        display: none;
+    }
+
+    #downarrow{
+        position: relative;
+    }
+
+    #downarrow2{
+        position: relative;
+    }
+
+    #slideMenu .ul-outer2{
+        position: relative;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 6em;
+        justify-content: space-evenly;
+        line-height: 2.2;
+    }
+    #slideMenu ul .btn-register{
+        padding-left: 37px;
+        padding-right: 36px;
+        border: 1px solid hsl(0, 0%, 8%);
+        background-color: transparent;
+        padding: 10px;
+        border-radius: 9px;
+    }
+    ul.showHiddenList {
+        display: inline-block;
+        position: relative;
+        top: 8px;
+        left: 18px;
+        margin-left: -30px;
+        height: 9em;
+        width: 8.5em;
+        line-height: 1.8;
+        padding: 0px;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    ul.showHiddenListCompany{
+        display: block;
+        height: 4.8em;
+        position: relative;
+        left: 5px;
+        top: 0px;
+        background-color: transparent;
+        width: 4.5em;
+        box-shadow: none;
+    }
+    ul.showHiddenListCompany li{
+        height: 1.4em;
+        left: 5px;
+    }
+
+    #todo-icon, #calander-icon, #reminder-icon, #planning-icon{
+        margin-left: 10px;
+    }
+}  
+
